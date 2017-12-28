@@ -1,12 +1,11 @@
-package No345;
+package no345;
 
 /**
  * Created by hardaway on 2017/12/28.
  */
-
+//传统方法
 public class Solution1{
     public String reverseVowels(String s) {
-
         int[] location = new int[s.length()];
         char[] vowel=new char[s.length()];
         String ss ="";

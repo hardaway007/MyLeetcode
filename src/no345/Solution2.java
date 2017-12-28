@@ -1,4 +1,4 @@
-package No345;
+package no345;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * Created by hardaway on 2017/12/28.
  */
+//Two Pointer Solution  双指针法：一个指针从头到尾，另一个指针从尾到头，一旦发现原音字母就swap
 public class Solution2{
     public String reverseVowels(String s) {
         Set<Character> set = new HashSet<Character>();
