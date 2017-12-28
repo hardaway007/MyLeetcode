@@ -17,7 +17,7 @@ public class Solution1{
                 location[index] = i;
                 vowel[index] =s.charAt(i);
                 index++;
-                //ss=ss+""+i;   字符串不停的重新创建，使得代码效率极低；
+                //ss=ss+""+i;   字符串不停的重新创建，使得代码效率极低!!!!!!!
             }
         }
         char[] news = s.toCharArray();
