@@ -1,0 +1,15 @@
+1.String str = "";  for(...){...; str = str+ ""+i; ....;}
+  在循环体中不停的变化字符串，内存消耗很大，效率很低。
+2. 数组的双指针法（two Pointer Solution）：一个指针从头到尾，另一个指针从尾到头；
+3. 字符串到数组的转换：1). char[] c = str.toCharArray();
+                       2)  String[] s = str.split("");  如果是空字符分割，注意s[0]为空串;   特殊，转义字符，必须加"\\"（“.”和“|”都是转义字符）
+4. 字符串的遍历   1）for() ; str.length(); str.charAt(i) ;
+                  2) 转换为数组
+5. char[]数组转换成String         1）使用new String(char[]); 2） String.valueOf(char[]);
+6. char 转化为int   1）把char转成字符串， Integer.parseInt(""+'1')
+7. 字符串反转        1)new StringBuffer(str).reverse().toString()
+                     2) char[] c = new char[str.length()];
+                        for(int i = 0; i<str.length();i++){
+                              c[i] = str.charAt(str.length()-1-i);
+                         }
+                         System.out.println(String.valueOf(c));
